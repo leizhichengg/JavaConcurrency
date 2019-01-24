@@ -8,9 +8,9 @@ package ch02;
 public class RaceConditionDemo {
 
     public static void main(String[] args) {
-        int numberOfthreads = args.length > 0 ? Short.valueOf(args[0]) : Runtime.getRuntime().availableProcessors();
-        Thread[] workerThreads = new Thread[numberOfthreads];
-        for (int i = 0; i < numberOfthreads; i++) {
+        int numberOfThreads = args.length > 0 ? Short.valueOf(args[0]) : Runtime.getRuntime().availableProcessors();
+        Thread[] workerThreads = new Thread[numberOfThreads];
+        for (int i = 0; i < numberOfThreads; i++) {
             workerThreads[i] = new WorkerThread(i, 10);
         }
 
