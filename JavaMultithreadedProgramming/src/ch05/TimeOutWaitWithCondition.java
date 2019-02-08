@@ -15,6 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date: Created in 2019-02-06 15:19
  */
 public class TimeOutWaitWithCondition {
+
     private static final Lock lock = new ReentrantLock();
     private static final Condition condition = lock.newCondition();
     private static boolean ready = false;
@@ -71,7 +72,6 @@ public class TimeOutWaitWithCondition {
     }
 
     private static void guarededAction() {
-
         Debug.info("Take some action.");
     }
 }
