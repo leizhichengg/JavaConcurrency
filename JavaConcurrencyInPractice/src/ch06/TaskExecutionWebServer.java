@@ -23,7 +23,7 @@ public class TaskExecutionWebServer {
             Runnable task = new Runnable() {
                 @Override
                 public void run() {
-                    doSomething(connection);
+                    //doSomething(connection);
                 }
             };
             exec.execute(task);
