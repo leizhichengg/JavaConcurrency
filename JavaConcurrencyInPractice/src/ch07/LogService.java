@@ -10,6 +10,7 @@ import java.util.concurrent.BlockingQueue;
  * @Description:
  * @Date: Created in 2019-03-12 10:31
  */
+
 public class LogService {
     private final BlockingQueue<String> queue;
     private final LoggerThread loggerThread;
@@ -65,5 +66,4 @@ public class LogService {
             }
         }
     }
-
 }
