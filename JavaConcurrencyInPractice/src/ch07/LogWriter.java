@@ -30,8 +30,6 @@ public class LogWriter {
     private class LoggerThread extends Thread {
         private final PrintWriter writer;
 
-        //
-
         @Override
         public void run() {
             try {
@@ -45,6 +43,4 @@ public class LogWriter {
             }
         }
     }
-
-
 }

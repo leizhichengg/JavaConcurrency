@@ -17,7 +17,6 @@ public class IndexingService {
     private final FileFilter fileFilter;
     private final File root;
 
-
     class CrawlerThread extends Thread {
         @Override
         public void run() {
@@ -36,7 +35,6 @@ public class IndexingService {
                 }
             }
         }
-
 
         public void crawl(File root) throws InterruptedException {
 
